@@ -120,7 +120,6 @@ class Solution(object):
         m = re.findall(r'^(?<![\+\-])[\+\-]?[0-9]+', str)
         if not m or not str:
             return 0
-
         m, d = m[0], lambda x: ord(x) - 48
         sign = 1 if m[0] != '-' else -1
         res = 0
@@ -306,7 +305,6 @@ class Solution(object):           #堆排序，不是很懂
                 heapreplace(h, (n.next.val, n.next))
             node.next = n
             node = node.next
-
         return dummy.next   
         
 #24. Swap Nodes in Pairs *链表交换节点
@@ -2038,7 +2036,7 @@ class Solution(object):
         """
         return ['Fizz'*(not m % 3) + 'Buzz'*(not m % 5) or str(m) for m in range(1,n+1)]       # *True/False   or命令
 
-#Submission Details      找第三大的数
+#414. Third Maximum Number       找第三大的数
 class Solution(object):
     def thirdMax(self, nums):
         """
