@@ -1,4 +1,4 @@
-public class Solution {
+public class Solution {       //带括号的字符串加减运算
     public int calculate(String s) {
         int n = s.length() - 1;
         int result = 0;
