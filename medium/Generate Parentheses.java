@@ -4,7 +4,7 @@ public class Solution {     //括号的组合方式
         backtracking(li, "", n, 0, 0);
         return li;
     }
-    public void backtracking(List list, String str, int n, int p, int q){   //回溯法
+    public void backtracking(List list, String str, int n, int p, int q){   //回溯法。
         if (p+q == 2*n){
             list.add(str);
             return;
